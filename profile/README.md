@@ -1,18 +1,22 @@
-# AgentUX OS
+# AgentUX
 
-> **The Agentic Developer Linux Distribution**  
-> Unindo orquestração multiagente assíncrona, protocolos MCP e uma experiência de desenvolvimento ultraleve baseada em Linux.
-
----
-
-### 🌐 O que é o AgentUX?
-O AgentUX é um sistema operativo concebido para gerir múltiplos agentes de IA a trabalhar em múltiplos projetos em simultâneo. Em vez de depender de hardware local pesado, orquestra ferramentas de mercado (Claude Code, OpenAI Codex, Aider, OpenCode) através de fluxos de trabalho resilientes geridos por **Temporal** e contratos **Model Context Protocol (MCP)**.
-
-### 🧩 Ecossistema de Repositórios
-* **[agentux](https://github.com/agentux-os/agentux)** — Repositório central com especificações, ADRs e planeamento global.
-* **[agentux-desktop](https://github.com/agentux-os/agentux-desktop)** — Ambiente de trabalho (Hyprland + HUD em Tauri/Rust).
-* **[agentux-engine](https://github.com/agentux-os/agentux-engine)** — Motor de orquestração Temporal e multiplexador MCP.
-* **[agentux-os](https://github.com/agentux-os/agentux-os)** — Scripts de compilação da distribuição e receitas de pacotes.
+> **One control plane for every coding agent you already use.**
+> Orchestrate Claude Code, Codex, OpenCode, Antigravity and other harnesses across multiple projects — from issue to reviewed pull request.
 
 ---
-*Open-source sob licença Apache 2.0.*
+
+### 🌐 What is AgentUX?
+
+AgentUX coordinates coding agents from different vendors so they work together instead of side by side. Each task runs in its own git worktree, one agent implements, another vendor's agent reviews, tests gate every step, and you only step in when a decision is yours to make.
+
+Inference stays with the providers; AgentUX is the orchestration layer. It integrates harnesses through the [Agent Client Protocol (ACP)](https://agentclientprotocol.com) and their native headless modes, and gives them shared tools through the Model Context Protocol (MCP).
+
+### 🧩 Repositories
+
+* **[agentux](https://github.com/agentux-os/agentux)** — Specification, roadmap and Architecture Decision Records.
+* **[agentux-core](https://github.com/agentux-os/agentux-core)** — Orchestration daemon, workflow engine and harness adapters.
+* **[agentux-desktop](https://github.com/agentux-os/agentux-desktop)** — Cockpit UI: live agent status, diffs, approvals and token spend.
+* **[agentux-os](https://github.com/agentux-os/agentux-os)** — Optional Linux flavor with AgentUX and a modern dev toolchain preinstalled (planned).
+
+---
+*Open source under the Apache 2.0 license.*
