@@ -1,18 +1,27 @@
-# AgentUX OS
+# AgentUX
 
-> **The Agentic Developer Linux Distribution**  
-> Unindo orquestração multiagente assíncrona, protocolos MCP e uma experiência de desenvolvimento ultraleve baseada em Linux.
-
----
-
-### 🌐 O que é o AgentUX?
-O AgentUX é um sistema operativo concebido para gerir múltiplos agentes de IA a trabalhar em múltiplos projetos em simultâneo. Em vez de depender de hardware local pesado, orquestra ferramentas de mercado (Claude Code, OpenAI Codex, Aider, OpenCode) através de fluxos de trabalho resilientes geridos por **Temporal** e contratos **Model Context Protocol (MCP)**.
-
-### 🧩 Ecossistema de Repositórios
-* **[agentux](https://github.com/agentux-os/agentux)** — Repositório central com especificações, ADRs e planeamento global.
-* **[agentux-desktop](https://github.com/agentux-os/agentux-desktop)** — Ambiente de trabalho (Hyprland + HUD em Tauri/Rust).
-* **[agentux-engine](https://github.com/agentux-os/agentux-engine)** — Motor de orquestração Temporal e multiplexador MCP.
-* **[agentux-os](https://github.com/agentux-os/agentux-os)** — Scripts de compilação da distribuição e receitas de pacotes.
+> **The Linux distribution where every coding agent works as one team.**
+> Claude Code, Codex, OpenCode and Antigravity CLI — preinstalled, under one interface, talking to each other.
 
 ---
-*Open-source sob licença Apache 2.0.*
+
+### 🌐 What is AgentUX?
+
+AgentUX is a Linux distribution for developers who use coding agents from several vendors. It ships each provider's own CLI harness already wired together:
+
+* **One interface** on top of every CLI: sessions, diffs and permission requests look the same whatever the vendor, with the original TUI one click away.
+* **An agent bus** so agents talk to each other: request a cross-vendor review, hand off a task, escalate a decision to you.
+* **An orchestrator** that takes work from issue to reviewed pull request, each task in its own git worktree.
+* **An immutable base** (Fedora Atomic, bootc) with one-step rollback, so agents cannot break the system.
+
+Inference stays with the providers — no GPU required. Harnesses are integrated through the [Agent Client Protocol (ACP)](https://agentclientprotocol.com) and share tools through the Model Context Protocol (MCP).
+
+### 🧩 Repositories
+
+* **[agentux](https://github.com/agentux-os/agentux)** — Specification, roadmap and Architecture Decision Records.
+* **[agentux-core](https://github.com/agentux-os/agentux-core)** — Orchestration daemon, `aux` CLI, workflow engine, harness adapters and agent bus.
+* **[agentux-desktop](https://github.com/agentux-os/agentux-desktop)** — Cockpit app (unified agent interface) and desktop configuration.
+* **[agentux-os](https://github.com/agentux-os/agentux-os)** — Image definition, CI and ISO builds.
+
+---
+*Open source under the Apache 2.0 license.*
