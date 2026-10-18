@@ -39,7 +39,7 @@ Inference stays with the providers, on your own logins and API keys; no GPU requ
 
 ### Try it
 
-AgentUX is pre-release: the first image release (v0.5.x) is being published now, for x86_64 and aarch64, in a KDE Plasma and a Hyprland variant.
+AgentUX is pre-release: the first image release (v0.5.x) is being published now, for x86_64 and aarch64, with KDE Plasma (a lighter COSMIC image is in nightly testing).
 
 - **Without installing:** boot the [live ISO](https://download.agentuxos.org/iso/stable/agentux-live-x86_64.iso) from a USB stick or a VM. It runs the real desktop with a demo of fake agents, and installs when you want to keep it ([how](https://github.com/agentux-os/agentux-os#try-it-live)).
 - **Install:** the [installer ISO](https://download.agentuxos.org/iso/stable/agentux-x86_64.iso), or switch an existing Fedora Atomic / bootc system:
