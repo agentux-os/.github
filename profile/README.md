@@ -34,7 +34,7 @@ AgentUX is a Linux distribution for developers who use coding agents from severa
 Inference stays with the providers, on your own logins and API keys; no GPU required. Harnesses are driven through the [Agent Client Protocol](https://agentclientprotocol.com) and share tools over the Model Context Protocol.
 
 <p align="center">
-  <a href="https://github.com/agentux-os/agentux"><img alt="The AgentUX cockpit: two runs, one waiting for plan approval" src="https://raw.githubusercontent.com/agentux-os/agentux/main/docs/screenshots/cockpit-plan-approval.png" width="760"></a>
+  <a href="https://github.com/agentux-os/agentux"><img alt="The AgentUX cockpit: two runs, one waiting for plan approval" src="https://download.agentuxos.org/screenshots/stable/plasma-board.webp" width="760"></a>
 </p>
 
 ### Try it
